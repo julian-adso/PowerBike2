@@ -24,11 +24,11 @@
                     <li><a href="#">Productos</a></li>
                     <li><a href="#">Nosotros</a></li>
                     <li><a href="#">Contacto</a></li>
-                    <li><a href="#">Iniciar Sección</a></li>
+                    <li><a href="../login/login.php">Iniciar Sección</a></li>
                 </ul>
             </nav>
             <div class="cart">
-                <img src="icon-cart.png" alt="Carrito de Compras" class="cart-icon">
+                <img src="carrito.jpg" alt="Carrito de Compras" height="40" width="40">
                 <span class="cart-count">0</span>
             </div>
         </div>
@@ -45,33 +45,89 @@
     <section class="featured-products">
         <div class="container">
             <h2>accesorio para tu moto</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS4Vkfyv9SjkLFPmI2ooxLuz_PMN1hM6cZzI6TteJOrwIVcA9txxjFfngBdls-PKVeiJnC1yjPgE9JxdGyn18FsKrBQ1OhZ5p7voe7X8HPttdv3Ni2_bvawKw" alt="Casco de Moto">
-                    <h3>Casco Deportivo XYZ</h3>
-                    <p class="price">$150.000</p>
-                    <a href="#" class="btn btn-secondary">Ver Detalles</a>
+            <div class="carousel">
+            <button class="carousel-btn prev">&#10094;</button>
+            <div class="carousel-track">
+                <div class="carousel-item">
+                    <img src="imagenes/accesorio1.jpg" alt="Accesorio 1">
+                    <p>Casco Deportivo</p>
                 </div>
-                <div class="product-card">
-                    <img src="product-jacket.png" alt="Chaqueta de Moto">
-                    <h3>Chaqueta de Cuero Rider</h3>
-                    <p class="price">$250.000</p>
-                    <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                <div class="carousel-item">
+                    <img src="imagenes/accesorio2.jpg" alt="Accesorio 2">
+                    <p>Guantes de Moto</p>
                 </div>
-                <div class="product-card">
-                    <img src="product-gloves.png" alt="Guantes de Moto">
-                    <h3>Guantes Pro-Biker</h3>
-                    <p class="price">$60.000</p>
-                    <a href="#" class="btn btn-secondary">Ver Detalles</a>
+                <div class="carousel-item">
+                    <img src="imagenes/accesorio3.jpg" alt="Accesorio 3">
+                    <p>Chaqueta Impermeable</p>
                 </div>
-                  <div class="product-card">
-                    <img src="imagen" alt="Guantes de Moto">
-                    <h3>Guantes Pro-Biker</h3>
-                    <p class="price">$60.000</p>
-                    <a href="#" class="btn btn-secondary">Ver Detalles</a>
-                </div>
-                
             </div>
+            <button class="carousel-btn next">&#10095;</button>
+        </div>
+        </div>
+    </section>
+<script>
+    // Carrusel simple en JS
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    let index = 0;
+
+function showItem(idx) {
+    track.style.transform = `translateX(-${idx * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+    index = (index === 0) ? items.length - 1 : index - 1;
+    showItem(index);
+});
+nextBtn.addEventListener('click', () => {
+    index = (index === items.length - 1) ? 0 : index + 1;
+    showItem(index);
+});
+showItem(index);
+</script>
+<style>
+.carousel {
+    position: relative;
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s;
+    width: 100%;
+}
+.carousel-item {
+    min-width: 320px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    padding: 0 10px;
+    opacity: 0.7;
+}
+.carousel-btn.prev { left: 0; }
+.carousel-btn.next { right: 0; }
+</style>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nosotros</h1>
+            <p>Somos PowerBike, tu tienda de accesorios para motos. Ofrecemos una amplia gama de productos de alta calidad para que disfrutes al máximo de tu pasión por las motos.</p>
+            <p>Desde cascos y guantes hasta chaquetas y accesorios personalizados, tenemos todo lo que necesitas para equipar tu moto y garantizar tu seguridad en la carretera.</p>
+            <p>Con años de experiencia en el sector, nuestro equipo está comprometido a brindarte el mejor servicio y asesoramiento para que encuentres los productos perfectos para ti y tu moto.</p>
+            <p>¡Lo mejor para tu moto en un solo lugar!</p>
+            <a href="#" class="btn btn-primary">Ver Ofertas</a>
         </div>
     </section>
 
