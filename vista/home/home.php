@@ -54,15 +54,15 @@
             <button class="carousel-btn prev">&#10094;</button>
             <div class="carousel-track">
                 <div class="carousel-item">
-                    <img src="imagenes/accesorio1.jpg" alt="Accesorio 1">
+                    <img src="espejos.jpg" alt="Accesorio 1">
                     <p>Casco Deportivo</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagenes/accesorio2.jpg" alt="Accesorio 2">
+                    <img src="mangos.jpg" alt="Accesorio 2">
                     <p>Guantes de Moto</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="imagenes/accesorio3.jpg" alt="Accesorio 3">
+                    <img src="exploradoras.jpg" alt="Accesorio 3">
                     <p>Chaqueta Impermeable</p>
                 </div>
             </div>
