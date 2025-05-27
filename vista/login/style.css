@@ -1,0 +1,125 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Dark gray background */
+    background-image: url('background_moto.png');
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Blend image with background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #f0f0f0; /* Light gray text */
+}
+
+.login-container {
+    background-color: rgba(34, 34, 34, 0.9); /* Slightly transparent darker gray */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    border: 1px solid #444; /* Subtle border */
+}
+
+.login-header {
+    margin-bottom: 30px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 5px #000);
+}
+
+.login-header h1 {
+    margin: 0 0 5px 0;
+    color: #ffffff; /* White heading */
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+.login-header p {
+    margin: 0;
+    color: #cccccc; /* Lighter gray subtitle */
+    font-size: 0.9em;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bbbbbb; /* Medium gray label */
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    border: 1px solid #555555; /* Darker gray border */
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Very dark input background */
+    color: #f0f0f0; /* Light gray text in input */
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #777777; /* Lighter gray border on focus */
+    box-shadow: 0 0 8px rgba(120, 120, 120, 0.3);
+}
+
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #e0e0e0; /* Light gray button */
+    color: #1a1a1a; /* Dark text on button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-transform: uppercase;
+}
+
+.login-button:hover {
+    background-color: #ffffff; /* White button on hover */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.login-button:active {
+    transform: scale(0.98);
+}
+
+.form-footer {
+    margin-top: 25px;
+    font-size: 0.85em;
+}
+
+.form-footer a {
+    color: #aaaaaa; /* Light gray links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.form-footer a:hover {
+    color: #ffffff; /* White link on hover */
+    text-decoration: underline;
+}
+
+.form-footer span {
+    color: #666666; /* Dark gray separator */
+    margin: 0 10px;
+}
+
