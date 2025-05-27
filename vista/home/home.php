@@ -142,11 +142,11 @@ showItem(index);
                 <div class="col-md-4">
                     <h5>Redes Sociales</h5>
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <img src="imagenes/face.png" width="50">
+                    <img src="facebook.jpg" width="50">
                     <a href="#"><i class="fab fa-twitter"></i></a>
-                    <img src="imagenes/images.jpeg" width="50">
+                    <img src="twitter.png" width="50">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <img src="imagenes/insta.jpeg" width="50">
+                    <img src="intagram.jpg" width="50">
                 </div>
                 <div class="col-md-4">
                     <h5>Contacto</h5>
