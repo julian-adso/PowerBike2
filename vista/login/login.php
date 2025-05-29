@@ -13,7 +13,7 @@
             <h1>PowerBike</h1>
             <p>Tu aventura comienza aquí</p>
         </div>
-        <form id="loginForm">
+        <form method="POST" action="../../controlador/logincontrolador.php" enctype="application/x-www-form-urlencoded">
             <div class="input-group">
                 <label for="username">Usuario o Email</label>
                 <input type="text" id="username" name="username" required>
@@ -24,9 +24,9 @@
             </div>
             <button type="submit" class="login-button">Ingresar</button>
             <div class="form-footer">
-                <a href="#">¿Olvidaste tu contraseña?</a>
+                <a href="../../vista/web/web.php">Regresar</a>
                 <span>|</span>
-                <a href="#">Crear cuenta</a>
+                <a href="../crear/crear.php">Crear Cuenta</a>
             </div>
         </form>
     </div>

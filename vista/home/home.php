@@ -12,10 +12,6 @@
     </script>
 </head>
 
-<header>
-    motos el estrellon
-</header>
-
 <body>
     <header>
         <div class="container">
@@ -25,21 +21,17 @@
             </a>
             <nav>
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#featured-products">Productos</a></li>
+                    <li><a href="#about">Nosotros</a></li>
+                    <li><a href="#footer">Contacto</a></li>
                     <li><a href="../login/login.php">Iniciar Sección</a></li>
                 </ul>
             </nav>
-            <div class="cart">
-                <img src="carrito.jpg" alt="Carrito de Compras" height="40" width="40">
-                <span class="cart-count">0</span>
-            </div>
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-content">
             <h1>Equipa Tu Aventura</h1>
             <p>Lo mejor para tu moto en un solo lugar</p>
@@ -47,23 +39,23 @@
         </div>
     </section>
 
-    <section class="featured-products">
+    <section class="featured-products"  id="featured-products">
         <div class="container">
             <h2>accesorio para tu moto</h2>
             <div class="carousel">
             <button class="carousel-btn prev">&#10094;</button>
             <div class="carousel-track">
                 <div class="carousel-item">
-                    <img src="espejos.jpg" alt="Accesorio 1">
-                    <p>Casco Deportivo</p>
+                    <img src="espejos.jpg" alt="Accesorio 1" height="200" width="300">
+                    <p>Espejos Retrovisor</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="mangos.jpg" alt="Accesorio 2">
-                    <p>Guantes de Moto</p>
+                    <img src="mangos.jpg" alt="Accesorio 2" height="200" width="300">
+                    <p>Mangos</p>
                 </div>
                 <div class="carousel-item">
-                    <img src="exploradoras.jpg" alt="Accesorio 3">
-                    <p>Chaqueta Impermeable</p>
+                    <img src="exploradoras.jpg" alt="Accesorio 3" height="200" width="300">
+                    <p>Exploradoras</p>
                 </div>
             </div>
             <button class="carousel-btn next">&#10095;</button>
@@ -91,6 +83,12 @@ nextBtn.addEventListener('click', () => {
     showItem(index);
 });
 showItem(index);
+
+// Carrusel automático
+setInterval(() => {
+    index = (index === items.length - 1) ? 0 : index + 1;
+    showItem(index);
+}, 3000); // Cambia cada 3 segundos
 </script>
 <style>
 .carousel {
@@ -125,18 +123,17 @@ showItem(index);
 .carousel-btn.next { right: 0; }
 </style>
 
-    <section class="hero">
+    <section class="hero" id="about">
         <div class="hero-content">
             <h1>Nosotros</h1>
             <p>Somos PowerBike, tu tienda de accesorios para motos. Ofrecemos una amplia gama de productos de alta calidad para que disfrutes al máximo de tu pasión por las motos.</p>
             <p>Desde cascos y guantes hasta chaquetas y accesorios personalizados, tenemos todo lo que necesitas para equipar tu moto y garantizar tu seguridad en la carretera.</p>
             <p>Con años de experiencia en el sector, nuestro equipo está comprometido a brindarte el mejor servicio y asesoramiento para que encuentres los productos perfectos para ti y tu moto.</p>
             <p>¡Lo mejor para tu moto en un solo lugar!</p>
-            <a href="#" class="btn btn-primary">Ver Ofertas</a>
         </div>
     </section>
 
-    <footer class="bg-light py-4">
+    <footer class="bg-light py-4" id="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
@@ -146,7 +143,7 @@ showItem(index);
                     <a href="#"><i class="fab fa-twitter"></i></a>
                     <img src="twitter.png" width="50">
                     <a href="#"><i class="fab fa-instagram"></i></a>
-                    <img src="intagram.jpg" width="50">
+                    <img src="instagram.png" width="50">
                 </div>
                 <div class="col-md-4">
                     <h5>Contacto</h5>
