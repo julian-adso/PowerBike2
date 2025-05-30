@@ -7,21 +7,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="site-header">
-        <img src="logo.jpeg" alt="MotoAccesorios Logo" height="100" width="125">
-        <h1>PowerBike</h1>
-        <p>Equípate para la Aventura</p>
-    </header>
-
     <nav class="main-nav">
         <ul>
+            <li><div class="header-flex">
+                <img src="logo.jpeg" alt="MotoAccesorios Logo" height="100" width="125">
+                <div class="header-titles">
+                <h1>PowerBike</h1>
+                <p>Equípate para la Aventura</p>
+                </div>
+                </div>
+            </li>
             <li><a href="#" class="nav-link active" data-category="Todos">Todos</a></li>
             <li><a href="#" class="nav-link" data-category="Cascos">Cascos</a></li>
             <li><a href="#" class="nav-link" data-category="Indumentaria">Indumentaria</a></li>
             <li><a href="#" class="nav-link" data-category="Protecciones">Protecciones</a></li>
             <li><a href="#" class="nav-link" data-category="Accesorios">Accesorios</a></li>
             <li><a href="#" class="nav-link" data-category="Moto">Moto</a></li>
-            <li><img src="carrito.jpg" alt="Carrito de Compras" height="40" width="40"><span class="cart-count">0</span></li>
+            <li><a href="#"><img src="carrito.jpg" alt="Carrito de Compras" height="20" width="20"><span class="cart-count">0</span></a></li>
+            <li><div class="user-actions" align="right">
+                    <a href="../../modelo/logout.php">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="Logout Icon" class="logout-icon" width="20" height="20">
+                    </a>
+                </div></li>
         </ul>
     </nav>
 

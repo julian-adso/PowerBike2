@@ -36,6 +36,7 @@ class LoginModel {
     if ($resultado && $resultado->num_rows > 0) {
         $row = $resultado->fetch_assoc();
         session_start();
+        $_SESSION['usuario_id'] = $row['id'];
         $_SESSION['nombredeusuario'] = $row['nombre_usuario'];
         $_SESSION['numero_documento'] = $row['numero_documento'];
 

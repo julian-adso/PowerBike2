@@ -31,13 +31,13 @@
         </div>
     </header>
 
-    <section class="hero" id="hero">
-        <div class="hero-content">
-            <h1>Equipa Tu Aventura</h1>
-            <p>Lo mejor para tu moto en un solo lugar</p>
-            <a href="#" class="btn btn-primary">Ver Ofertas</a>
-        </div>
-    </section>
+  <section class="hero" id="hero">
+    <div class="hero-content">
+        <h1>Equipa Tu Aventura</h1>
+        <p>Lo mejor para tu moto en un solo lugar</p>
+        <a href="#" class="btn btn-primary">Ver Ofertas</a>
+    </div>
+</section>
 
     <section class="featured-products"  id="featured-products">
         <div class="container">

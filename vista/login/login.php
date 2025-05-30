@@ -24,7 +24,7 @@
             </div>
             <button type="submit" class="login-button">Ingresar</button>
             <div class="form-footer">
-                <a href="../../vista/web/web.php">Regresar</a>
+                <a href="../../vista/home/home.php">Regresar</a>
                 <span>|</span>
                 <a href="../crear/crear.php">Crear Cuenta</a>
             </div>

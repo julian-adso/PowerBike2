@@ -18,7 +18,7 @@ class Cliente {
         try {
             echo "Ejecutando consulta para paciente...";
             // Segunda consulta: Insertar en la tabla paciente
-            $sqlPaciente = "INSERT INTO usuarios (nombre, correo, password) VALUES (?, ?, ?)";
+            $sqlPaciente = "INSERT INTO usuarios (nombre_usuario, correo, contrasena) VALUES (?, ?, ?)";
             $stmtPaciente = $this->db->prepare($sqlPaciente);
 
             if ($stmtPaciente === false) {
