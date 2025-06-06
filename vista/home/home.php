@@ -25,7 +25,7 @@
                     <li><a href="#featured-products">Productos</a></li>
                     <li><a href="#about">Nosotros</a></li>
                     <li><a href="#footer">Contacto</a></li>
-                    <li><a href="../login/login.php">Iniciar Sección</a></li>
+                    <li><a href="../login/login.php">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
